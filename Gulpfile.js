@@ -79,9 +79,9 @@ gulp.task('php', function() {
 //
 gulp.task('build', function() {
     return gulp.src([
-            paths.theme + 'css/**.**',
-            paths.theme + 'images/**/**.**',            
-            paths.theme + '*.php'
+            paths.theme + '/css/**.**',
+            paths.theme + '/images/**/**.**',            
+            paths.theme + '/*.php'
         ], {
             base: "./"
         })
