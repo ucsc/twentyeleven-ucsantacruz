@@ -1,0 +1,31 @@
+{
+  "name": "twentyeleven-ucsc",
+  "version": "0.5.0",
+  "description": "UCSC Wordpress theme based on Twenty Eleven.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "ucsc",
+    "twentyeleven"
+  ],
+  "author": "Rob Knight",
+  "license": "BSD",
+  "dependencies": {
+    "gulp": "^3.8.9",
+    "gulp-copy": "0.0.2",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-changed": "^1.0.0",
+    "gulp-replace": "^0.4.0",
+    "gulp-concat": "^2.4.1",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-zip": "^2.0.2",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-imagemin": "^1.2.1",
+    "moment": "^2.8.3"
+  }
+}

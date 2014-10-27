@@ -1,0 +1,275 @@
+@import "bourbon";
+@import "neat";
+@import "variables";
+
+/*!
+Theme Name: Twenty Eleven for UCSC
+Theme URI: http://styleguide.ucsc.edu/themes/twentyelevenucsc
+Author: Rob Knight and the WordPress team
+Author URI: http://www.ucsc.edu/
+Description: The 2011 theme for WordPress is sophisticated, lightweight, and adaptable. This child theme incorporates the colors, typefaces, and logo for UCSC.
+Version: 0.9
+Tags: ucsc, uc-santa-cruz, one-column, two-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: twentyelevenucsc
+Template: twentyeleven
+*/
+
+/*! Line 317 */
+body, input, textarea {
+	color: $body-text;
+	font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	line-height: 1.625;
+}
+body {
+	background: #F5F4EB;
+}
+#page {
+	background: #fff;
+	/*!border: solid 1px #D3D2D1;*/
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+}
+
+/*! Line 471 */
+input#s {
+	background: url(images/search.png) no-repeat 5px 6px;
+	border-radius: 2px;
+	font-size: 14px;
+	height: auto;
+	line-height: 1.2em;
+	padding: 0.5em 0.5em 0.5em 28px;
+	width: auto;
+}
+
+/*! Line 484 */
+a {
+	color: #00458C;
+}
+
+/*! Line 501 */
+#access a.assistive-text:focus {
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	color: #00458C;
+}
+
+/*! Line 517 */
+#branding {
+	border-top: none;
+	padding-bottom: 10px;
+}
+#site-title {
+	margin: 0 206px 0 0;
+}
+#site-title a {
+	color: #FFC500;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+#site-title a:focus,
+#site-title a:hover,
+#site-title a:active {
+	color: #FFC500;
+}
+#site-description {
+	color: #A2A09C;
+	font-size: 14px;
+	margin: 0 270px 2.8em 0;
+}
+
+/*! Line 551 */
+#access {
+	box-sizing:border-box;
+	background: #F5F4EB;
+	border: 1px solid #E7E7E6;
+	border-width: 1px 0 1px 0;
+	box-shadow: none;
+	clear: both;
+	display: block;
+	float: left;
+	margin: 0 auto 2em;
+	width: 100%;
+}
+#access ul {
+	font-size: 13px;
+	list-style: none;
+	margin: 0 0 0 -0.8125em;
+	padding-left: 0;
+}
+#access li {
+	float: left;
+	position: relative;
+}
+#access a {
+	color: #676661;
+	display: block;
+	line-height: 3.333em;
+	padding: 0 1.2125em;
+	text-decoration: none;
+}
+#access ul ul {
+	box-shadow: none;
+	display: none;
+	float: left;
+	margin: 0;
+	position: absolute;
+	top: 3.333em;
+	left: 0;
+	width: 188px;
+	z-index: 99999;
+}
+#access ul ul ul {
+	left: 100%;
+	top: 0;
+}
+#access ul ul a {
+	background: #f9f9f9;
+	border-bottom: 1px dotted #ddd;
+	color: #444;
+	font-size: 13px;
+	font-weight: normal;
+	height: auto;
+	line-height: 1.4em;
+	padding: 10px 10px;
+	width: 168px;
+}
+#access li:hover > a,
+#access ul ul :hover > a,
+#access a:focus {
+	background: #efefef;
+}
+#access li:hover > a,
+#access a:focus {
+	color: #FFCE29;
+	background-color: #00458C;
+}
+#access ul li:hover > ul {
+	display: block;
+}
+#access .current-menu-item > a,
+#access .current-menu-ancestor > a,
+#access .current_page_item > a,
+#access .current_page_ancestor > a {
+	font-weight: bold;
+}
+
+/*! Line 648 */
+#branding #s {
+	float: right;
+	-webkit-transition-duration: 400ms;
+	-webkit-transition-property: width, background;
+	-webkit-transition-timing-function: ease;
+	-moz-transition-duration: 400ms;
+	-moz-transition-property: width, background;
+	-moz-transition-timing-function: ease;
+	-o-transition-duration: 400ms;
+	-o-transition-property: width, background;
+	-o-transition-timing-function: ease;
+	width: 96px;
+}
+#branding #s:focus {
+	background-color: #f9f9f9;
+	width: 200px;
+}
+
+
+/*! Line 701 */
+.page-title {
+	color: #666;
+	font-size: 10px;
+	font-weight: 500;
+}
+
+.entry-title {
+	clear: both;
+	color: #222;
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 1.5em;
+	padding-bottom: .3em;
+	padding-top: 15px;
+}
+
+.entry-title a {
+	color: #00458C;
+	text-decoration: none;
+}
+
+/*! Line 750 */
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-title a:active {
+	color: #00458C;
+	text-decoration: underline;
+}
+
+/*! Line 1058 */
+.entry-header .comments-link a:hover,
+.entry-header .comments-link a:focus,
+.entry-header .comments-link a:active {
+	background-color: #00458C;
+	color: #fff;
+	color: rgba(255,255,255,0.8);
+}
+
+/*! Line 1111 */
+.singular .entry-title {
+	color: #4D4D4B;
+}
+
+
+/*! Line 1463 */
+article.feature-image.small .entry-summary p a:hover {
+	background: #00458C;
+	color: #eee;
+	color: rgba(255,255,255,0.8);
+}
+
+/*! Line 1599 */
+.feature-slider a.active {
+	background: #00458C;
+}
+
+/*! Line 1661 */
+section.recent-posts .other-recent-posts .comments-link a:hover {
+	color: #00458C;
+	border-color: #00458C;
+}
+
+/*! Line 1839 */
+.widget_search #searchsubmit:active {
+	background: #00458C;
+	border-color: #0861a5;
+	color: #bfddf3;
+}
+
+/*! Line 2187 */
+#respond input#submit:active {
+	background: #00458C;
+	color: #bfddf3;
+}
+
+/*! Custom */
+.campus-logo {
+	overflow: hidden;
+	background: url(http://static.ucsc.edu/_responsive/images/logos/ucsc-logotype.svg) no-repeat left top;
+	background-size: contain;
+	height: 56px;
+	display: block;
+	width: 198px;
+	margin: 3.65625em 0 0;
+}
+
+.campus-logo::before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 100%;
+}
+
+@include media($desktop) {
+	
+}
