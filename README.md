@@ -25,13 +25,15 @@
 
 This configuration makes the following assumptions:
 
-1. You have a Wordpress installation in the same directory as this repository (running on your own PHP server setup, such as MAMP or XAMP). Your directory structure should look like this:
+- You have a Wordpress installation in the same directory as this repository (running on your own PHP server setup, such as MAMP or XAMP). Your directory structure should look like this:
 
+````
 your-project-folder/
-    /twentyeleven-ucsc (this repository)
+    /twentyeleven-ucsc
     /wordpress
+````
 
-2. You already have the `twentyeleven` theme installed at:  
+- You already have the `twentyeleven` theme installed at:  
 `wordpress/wp-content/themes/twentyeleven`. 
 
 When you run `gulp`, the theme files will be compiled and added to:  
