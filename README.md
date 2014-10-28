@@ -31,9 +31,10 @@ your-project-folder/
     /twentyeleven-ucsc (this repository)
     /wordpress
 
-2. You already have the `twentyeleven` theme installed at `wordpress/wp-content/themes/twentyeleven`. 
+2. You already have the `twentyeleven` theme installed at:  
+`wordpress/wp-content/themes/twentyeleven`. 
 
-When you run `gulp`, the theme files will be compiled and added to:
+When you run `gulp`, the theme files will be compiled and added to:  
 `wordpress/wp-content/themes/twentyeleven-ucsc`
 
 ## Development
