@@ -259,8 +259,7 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 	background-size: contain;
 	height: 56px;
 	display: block;
-	width: 198px;
-	margin: 3.65625em 0 0;
+	width: 100%;
 }
 
 .campus-logo::before {
@@ -269,6 +268,54 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 	width: 0;
 	height: 100%;
 }
+
+#branding {
+
+	.section-titles {
+
+		// border: 1px solid red;
+		margin: 0 230px 0 7.6%;
+		padding-top: 60px;
+		
+		.campus-logo-box,
+		.site-headers {
+			display:inline-block;
+			padding: 0;
+			margin:0;
+			float: left;
+			a {
+				margin-top: 0;
+				padding: 0;
+			}
+		}
+
+		.campus-logo-box {
+			width: 34%;
+		}
+
+		.site-headers {
+			width: 64%;
+			#site-title, 
+			#site-description {
+				margin-right: 0;
+				padding: 0;
+				@include media($tablet) {
+					width: 100%;
+				}
+			}
+ 		}
+
+		@include clearfix();
+
+	}
+
+	#searchform {
+		right:4%;
+		top: 60px;
+	}
+
+}
+
 
 @include media($desktop) {
 	

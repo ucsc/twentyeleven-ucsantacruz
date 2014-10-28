@@ -70,11 +70,37 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
-			<hgroup>
-				<a class="campus-logo" href="http://www.ucsc.edu/" id="logo">UC Santa Cruz</a>
-				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</hgroup>
+
+			<div class="section-titles">
+				<div class="campus-logo-box">
+					<a class="campus-logo" href="http://www.ucsc.edu/">UC Santa Cruz</a>
+				</div>
+
+				<div class="site-headers">
+					<h1 id="site-title">
+						<span>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+						</span>
+					</h1>
+				
+					<p id="site-description">
+						<?php bloginfo( 'description' ); ?>
+					</p>
+				</div>
+			</div>
+
+			<div class="section-search">
+				<?php
+					// Has the text been hidden?
+					if ( 'blank' == get_header_textcolor() ) : 
+				?>
+				<div class="only-search<?php if ( $header_image ) : ?> with-image<?php endif; ?>">
+					<?php get_search_form(); ?>
+				</div>
+				<?php else : ?>
+					<?php get_search_form(); ?>
+				<?php endif; ?>
+			</div>
 
 			<nav id="access" role="navigation">
 				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
@@ -129,19 +155,6 @@
 				<?php endif; // end check for featured image or standard header ?>
 			</a>
 			<?php endif; // end check for removed header image ?>
-
-			<?php
-				// Has the text been hidden?
-				if ( 'blank' == get_header_textcolor() ) :
-			?>
-				<div class="only-search<?php if ( $header_image ) : ?> with-image<?php endif; ?>">
-				<?php get_search_form(); ?>
-				</div>
-			<?php
-				else :
-			?>
-				<?php get_search_form(); ?>
-			<?php endif; ?>
 
 	</header><!-- #branding -->
 
