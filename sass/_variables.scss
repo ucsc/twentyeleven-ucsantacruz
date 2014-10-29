@@ -89,8 +89,11 @@ $grids-columns: 12;
 $column: golden-ratio(1em, 3);
 $gutter: golden-ratio(1em, 1);
 
-// Breakpoint variables
+// Standard breakpoint variables
 $desktop:   new-breakpoint(min-width em(960) 12);
 $tablet:    new-breakpoint(min-width em(768) 12);
 $portrait:  new-breakpoint(min-width em(600) 12);
 $mobile:    new-breakpoint(max-width em(599) 12);
+
+// Wordpress breakpoint variables
+$medium:   new-breakpoint(min-width em(500) 12);
