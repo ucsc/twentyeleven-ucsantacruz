@@ -69,14 +69,17 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
+
 	<header id="branding" role="banner">
 
 			<div class="section-titles">
+
 				<div class="campus-logo-box">
 					<a class="campus-logo" href="http://www.ucsc.edu/">UC Santa Cruz</a>
 				</div>
 
-				<div class="site-headers">
+				<div class="site-headers">		
+
 					<h1 id="site-title">
 						<span>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
@@ -86,18 +89,21 @@
 					<p id="site-description">
 						<?php bloginfo( 'description' ); ?>
 					</p>
+
+					<?php if ( 'blank' == get_header_textcolor() ) : ?>
+					<div class="no-header-text<?php if ( $header_image ) : ?> with-image<?php endif; ?>">
+						<?php get_search_form(); ?>
+					</div>
+					<?php endif; ?>					
+
 				</div>
+				
 			</div>
 
 			<div class="section-search">
 				<?php
 					// Has the text been hidden?
-					if ( 'blank' == get_header_textcolor() ) : 
-				?>
-				<div class="only-search<?php if ( $header_image ) : ?> with-image<?php endif; ?>">
-					<?php get_search_form(); ?>
-				</div>
-				<?php else : ?>
+					if ( 'blank' != get_header_textcolor() ) : ?>
 					<?php get_search_form(); ?>
 				<?php endif; ?>
 			</div>
