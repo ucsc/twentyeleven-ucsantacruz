@@ -1,3 +1,5 @@
+[Download the zipped theme here](https://github.com/ucsc/twentyeleven-ucsc/raw/master/twentyeleven-ucsc.zip).
+
 ## Dependencies
 
 ### Ruby and gems
