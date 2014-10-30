@@ -79,11 +79,9 @@ gulp.task('files', function() {
 //
 gulp.task('build', function() {
     return gulp.src([
-            paths.theme + '/css/**.**',
-            paths.theme + '/images/**/**.**',            
-            paths.theme + '/*.php'
+            paths.theme + '**/**'
         ], {
-            base: "./"
+            base: paths.theme
         })
         .pipe(zip('twentyeleven-ucsc.zip'))
         .pipe(gulp.dest('./'));
