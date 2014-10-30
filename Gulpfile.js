@@ -20,7 +20,7 @@ var pkg = require('./package.json'),
 //
 var paths = {
     styles: './sass/**.scss',
-    php: './php/**/**',
+    files: ['./screenshot.png', './php/**/**'],
     images: ['./images/**', './images/**.**'],    
     theme: './wordpress/wp-content/themes/twentyeleven-ucsc'
 };
@@ -66,10 +66,10 @@ gulp.task('images', function() {
 
 
 //
-// Copy PHP files into theme folder.
+// Copy PHP and screenshot files into theme folder.
 //
-gulp.task('php', function() {
-    return gulp.src(paths.php)
+gulp.task('files', function() {
+    return gulp.src(paths.files)
         .pipe(gulp.dest(paths.theme));
 });
 
@@ -96,11 +96,11 @@ gulp.task('build', function() {
 gulp.task('watch', function() {
     gulp.watch('sass/**/*.scss', ['styles']);
     //gulp.watch('images/**/.**', ['images']);
-    gulp.watch('php/*.php', ['php']);
+    gulp.watch(['screenshot.png', 'php/*.php'], ['files']);
 });
 
 
 //
 // The default task (called when you run `gulp`)
 //
-gulp.task('default', ['clean', 'styles', 'images', 'php', 'watch']);
+gulp.task('default', ['clean', 'styles', 'images', 'files', 'watch']);
