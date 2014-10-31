@@ -72,41 +72,33 @@
 
 	<header id="branding" role="banner">
 
-			<div class="section-titles">
+			<!-- 	
+					We'll put the three header areas (logo, titles, search)
+					into a single row and use display:table to make it work
+			-->
+			<div class="section-header">
 
-				<div class="campus-logo-box">
+				<div class="cell cell-logo">
 					<a class="campus-logo" href="http://www.ucsc.edu/">UC Santa Cruz</a>
 				</div>
 
-				<div class="site-headers">		
-
+				<div class="cell cell-titles">		
 					<h1 id="site-title">
 						<span>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 						</span>
-					</h1>
-				
+					</h1>				
 					<p id="site-description">
 						<?php bloginfo( 'description' ); ?>
 					</p>
-
-					<?php if ( 'blank' == get_header_textcolor() ) : ?>
-					<div class="no-header-text<?php if ( $header_image ) : ?> with-image<?php endif; ?>">
-						<?php get_search_form(); ?>
-					</div>
-					<?php endif; ?>					
-
 				</div>
-				
-			</div>
 
-			<div class="section-search">
-				<?php
-					// Has the text been hidden?
-					if ( 'blank' != get_header_textcolor() ) : ?>
+				<div class="cell cell-search">
 					<?php get_search_form(); ?>
-				<?php endif; ?>
+				</div>
+
 			</div>
+			
 
 			<nav id="access" role="navigation">
 				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>

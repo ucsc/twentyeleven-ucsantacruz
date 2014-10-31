@@ -255,9 +255,9 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 /*! Custom */
 .campus-logo {
 	overflow: hidden;
-	background: url(http://static.ucsc.edu/_responsive/images/logos/ucsc-logotype.svg) no-repeat center top;
+	background: url(http://static.ucsc.edu/_responsive/images/logos/ucsc-logotype.svg) no-repeat left top;
 	background-size: contain;
-	height: 36px;
+	height: 50px;
 	display: block;
 	width: 100%;
 }
@@ -271,104 +271,72 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 
 #branding {
 
-	padding: 0 0 1em;
-
-	.section-titles {
-		margin: 0 7.6% 0 7.6%;
-		@include media($tablet) {
-			padding-top: 20px;
-		}
+	.section-header {
 		
-		.campus-logo-box,
-		.site-headers {
-			display:block;
-			text-align: center;
-			float: none;
-			padding: 1em 0 0 0;
-			margin:0;
-			a {
-				margin-top: 0;
-				padding: 0;
-			}
-			@include media($medium) {
-				float: left;
-				text-align: left;
-			}
-		}
+		display:table;
+		width: 100%;
+		// border:4px dotted red;
+		padding: 1.5em 1em;
 
-		.campus-logo-box {
+		.cell {
+			vertical-align: top;
+			display: block;
 			width:100%;
-			margin: 0 2% 0 0;
-			@include media($medium) {
-				width: 30%;
-				.campus-logo {
-					background-position: left top;
-					height: 56px;
-				}
-			}
+			padding: 0.5em 0;
 			@include media($tablet) {
-				width: 24%;
+				display: table-cell;
 			}
 		}
 
-		.site-headers {
-			width: 100%;
-			@include media($medium) {
-				width: 68%;
+		.cell-logo {
+			// border:4px dotted blue;
+			text-align: left; 			
+			@include media($tablet) {
+				width:22%;
+				padding-right: 0.5em;	
 			}			
-			#site-title a {
-				font-size:1.4em;
-				line-height: 1.2;
-				@include media($tablet) {
-					font-size:2em;
-					line-height: 1.3;
-					.one-column & {
-						font-size: 1.8em;
-					}
-				}				
-			}
-			#site-title, 
+		}
+
+		.cell-titles {
+			// border:4px dotted yellow;
+			#site-title,
 			#site-description {
+				line-height: 1.3;
 				margin: 0;
 				padding: 0;
-				line-height: 1.2;
-				@include media($tablet) {
-					width: 100%;
-				}
 			}
- 		}
-
-		@include clearfix();
-
-	}
-
-	.section-search {
-		#searchform {
-			// right:4%;
-			// top: 60px;
-			margin: 1em 0;
-			position: relative;
-			top: auto !important;
-			left: 0;
-			text-align: center; 
 			@include media($tablet) {
-				text-align: right;
-				margin-right:7.6%;
+				width: 60%;
+			}						
+		}
+
+		.cell-search {
+			// border:4px dotted purple;
+			#searchform,
+			#searchform #s {
+				float: none;				
+				position: relative;
+				top: auto !important;
+				right: auto;
 			}
+			#s:focus {
+				width: 150px;
+			}
+			@include media($tablet) {
+				width: 17%;	
+			}						
 		}
 		
-		#s {
-			float:none;
-		}
 	}
 
 	#access {
-		margin-bottom: 0;
+		margin: 0;
+		padding:0;
+		width:100%;
+	}
+
+	a img {
+		display: inline-block;
 	}
 
 }
-
-		#branding .no-header-text #searchform,
-		.one-column #branding .no-header-text #searchform {
-			top: 2.7em;
-		}		
