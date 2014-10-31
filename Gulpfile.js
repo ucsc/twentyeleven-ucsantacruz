@@ -22,7 +22,7 @@ var paths = {
     styles: './sass/**.scss',
     files: ['./screenshot.png', './php/**/**'],
     images: ['./images/**', './images/**.**'],    
-    theme: './wordpress/wp-content/themes/twentyeleven-ucsc'
+    theme: './wordpress/wp-content/themes/twentyeleven-ucsantacruz'
 };
 
 
@@ -83,7 +83,7 @@ gulp.task('build', function() {
         ], {
             base: paths.theme
         })
-        .pipe(zip('twentyeleven-ucsc.zip'))
+        .pipe(zip('twentyeleven-ucsantacruz.zip'))
         .pipe(gulp.dest('./'));
 });
 
