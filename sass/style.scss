@@ -127,7 +127,7 @@ a {
 }
 #access ul ul a {
 	background: #f9f9f9;
-	border-bottom: 1px dotted #ddd;
+	border-bottom: 1px solid #ddd;
 	color: #444;
 	font-size: 13px;
 	font-weight: normal;
@@ -139,7 +139,7 @@ a {
 #access li:hover > a,
 #access ul ul :hover > a,
 #access a:focus {
-	background: #efefef;
+	background: #00458C;
 }
 #access li:hover > a,
 #access a:focus {
