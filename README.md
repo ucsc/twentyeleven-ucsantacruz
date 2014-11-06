@@ -17,7 +17,7 @@
 ## Setup
 
 1. Clone this repository locally using the Github app or with `git clone https://github.com/ucsc/twentyeleven-ucsc.git`.
-2. Install Gems:
+2. Install Ruby Gems:
     - `gem install bundler`
     - `bundle install`
 3. Install `node` and `npm` by downloading the installer from [nodejs.com](http://nodejs.org).
@@ -31,7 +31,7 @@ This configuration makes the following assumptions:
 
 ````
 your-project-folder/
-    /twentyeleven-ucsc
+    /twentyeleven-ucsantacruz
     /wordpress
 ````
 
@@ -39,7 +39,7 @@ your-project-folder/
 `wordpress/wp-content/themes/twentyeleven`. 
 
 When you run `gulp`, the theme files will be compiled and added to:  
-`wordpress/wp-content/themes/twentyeleven-ucsc`
+`wordpress/wp-content/themes/twentyeleven-ucsantacruz`
 
 ## Development
 
@@ -47,4 +47,4 @@ In a terminal window, run `gulp` in the project root to compile the theme files 
 
 ## Deployment
 
-Running `gulp build` will compile the **twentyeleven-ucsc** theme files into a zip archive that you can manually upload to your Wordpress site through the web interface.
+Running `gulp build` will compile the **twentyeleven-ucsantacruz** theme files into a zip archive that you can manually upload to your Wordpress site through the web interface.
