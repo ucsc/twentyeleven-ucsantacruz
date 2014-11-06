@@ -1,18 +1,20 @@
-@import "bourbon";
-@import "neat";
-@import "variables";
-
 /*!
 Theme Name: Twenty Eleven for UCSC
-Theme URI: http://styleguide.ucsc.edu/themes/twentyelevenucsc
+Theme URI: https://github.com/ucsc/twentyeleven-ucsantacruz
 Author: Rob Knight
 Author URI: http://www.ucsc.edu/
 Description: The 2011 theme for WordPress is sophisticated, lightweight, and adaptable. This child theme incorporates the colors, typefaces, and logo for UCSC.
-Version: 0.9
+Version: 1.0.1
 Tags: ucsc, uc-santa-cruz, one-column, two-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
 Text Domain: twentyelevenucsc
 Template: twentyeleven
 */
+
+
+@import "bourbon";
+@import "neat";
+@import "variables";
+
 
 /*! Line 317 */
 body, input, textarea {
@@ -345,4 +347,42 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 		display: inline-block;
 	}
 
+}
+
+// 
+// 	Customizations from Julie Rogge
+// 
+
+/* Increases content width - jrogge */
+.singular .entry-header, .singular .entry-content, .singular footer.entry-meta, .singular #comments-title {
+margin: 0 auto;
+width: 80%;
+}
+
+/* Make title on the pages a little smaller - jrogge */
+header.entry-header h1.entry-title {
+	font-size: 24px;
+}
+
+.singular .entry-header {
+	font-size: 24px;
+}
+
+/* Default footer text is so small, it's not legible - jrogge */
+footer .textwidget p {
+	font-size: 11pt;
+	line-height: 125%;
+}
+
+/* Captions should be aligned left - jrogge */
+.entry-content dd, .comment-content dd {
+	text-align: left;
+}
+
+dd.wp-caption-text.gallery-caption {
+	text-align:left
+}
+
+.wp-caption-text gallery-caption {
+	text-align: left;
 }
