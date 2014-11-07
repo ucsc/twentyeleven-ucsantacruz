@@ -1,6 +1,6 @@
 {
-  "name": "twentyeleven-ucsc",
-  "version": "0.5.0",
+  "name": "twentyeleven-ucsantacruz",
+  "version": "1.0.1",
   "repository": "https://github.com/ucsc/twentyeleven-ucsc",
   "description": "UCSC Wordpress theme based on Twenty Eleven.",
   "main": "index.js",
@@ -27,7 +27,6 @@
     "gulp-zip": "^2.0.2",
     "gulp-autoprefixer": "^1.0.1",
     "gulp-imagemin": "^1.2.1",
-    "moment": "^2.8.3",
     "gulp-build": "^0.5.3"
   }
 }
