@@ -1,4 +1,4 @@
-[Download the zipped theme here](https://github.com/ucsc/twentyeleven-ucsantacruz/raw/master/twentyeleven-ucsantacruz.zip).
+[Download the zipped theme on the releases page](https://github.com/ucsc/twentyeleven-ucsantacruz/releases).
 
 ## Dependencies
 
